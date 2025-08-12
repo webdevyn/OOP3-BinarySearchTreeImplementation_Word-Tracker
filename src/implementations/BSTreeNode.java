@@ -39,5 +39,8 @@ public class BSTreeNode<E extends Comparable<? super E>> implements Serializable
         this.right = right;
     }
 
+    public E getElement() {
+        return data;
+    }
 }
 

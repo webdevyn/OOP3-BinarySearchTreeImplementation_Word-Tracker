@@ -18,6 +18,12 @@ public class BSTree<E extends Comparable<? super E>> implements BSTreeADT<E>, Se
         size = 0;
     }
 
+    public BSTree(E element) {
+        if (element == null) throw new NullPointerException("element is null");
+        root = new BSTreeNode<>(element);
+        size = 1;
+    }
+
 
     @Override
     public BSTreeNode<E> getRoot() throws NullPointerException {
